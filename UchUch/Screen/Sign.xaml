@@ -1,0 +1,19 @@
+﻿<Window x:Class="UchUch.Screen.Sign"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UchUch"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="гр. ТМК - СинТЗ - Авторизация" Height="248.148" Width="264.889" ResizeMode="NoResize"  MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="TBlogin" Width="150" Height="36" FontSize="20" Margin="0,0,0,2"   GotFocus="RemoveText" LostFocus="AddText" TextWrapping="Wrap" Tag="Табельный №" Text="Табельный №" Cursor="Arrow" CaretBrush="#FFE8965F" SelectionBrush="#FFE8965F"/>
+            <PasswordBox PasswordChar="*" x:Name="TBpass" Width="150" Height="34" FontSize="20"  GotFocus="RemoveTextPass" LostFocus="AddTextPass" Tag="******" Password="******" CaretBrush="#FFE8965F" SelectionBrush="#FFE8965F" Cursor="Arrow"/>
+            <Button x:Name="BtnLogin" Content="Вход" FontSize="18" Margin="10" Click="BtnLogin_Click" Cursor="Hand" Background="#FFEC6308" BorderBrush="#FFEC6308"/>
+
+        </StackPanel>
+        <Image HorizontalAlignment="Left"  Height="50" VerticalAlignment="Top" Width="52" Source="/Screen/logo.jpg"/>
+    </Grid>
+</Window>

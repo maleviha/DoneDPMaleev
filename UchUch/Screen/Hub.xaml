@@ -1,0 +1,24 @@
+﻿<Window x:Class="UchUch.Screen.Hub"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UchUch.Screen"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Title="Профиль" Height="400" Width="300" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <!-- ToolBar Windows -->
+
+        <Label Content="Профиль" HorizontalAlignment="Left"  Margin="156,25,0,-25"/>
+        <Image x:Name="ImageProfile" Width="140" Margin="116,63,44,211"/>
+        <Label x:Name="ProfLogin" Content="Ваш табельный №: " Margin="-1,190,1,179" />
+        <Label x:Name="ProfPost" Content="Ваша должность: "  Margin="-1,226,1,143" />
+        <Label x:Name="ProfFio" Content="Ваше ФИО: "  Margin="-1,262,1,107" />
+        <Button x:Name="ButtonProfileExit" Content="Выйти" Click="ButtonProfileExit_Click" Height="40"  Margin="195,350,10,10"  />
+        <Label x:Name="ProfWork" Content="Ваш участок: "  Margin="2,293,-2,76" />
+        <Button x:Name="ButtonOpen" Content="Учёт" Height="40"  Margin="10,350,163,10" Click="ButtonOpen_Click" />
+        <Button x:Name="ButtonOpenAdm" Content="Начальство" Visibility="Visible" Height="40"  Margin="10,25,200,335" Click="ButtonOpenAdm_Click"  />
+    </Grid>
+</Window>
